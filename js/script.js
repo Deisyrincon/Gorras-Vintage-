@@ -1,4 +1,8 @@
-const API_URL = "https://TU-BACKEND-WOMPI.onrender.com";
+const API_URL =
+    window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1"
+        ? "http://localhost:3000"
+        : "https://TU-BACKEND-WOMPI.onrender.com";
+const WHATSAPP_PHONE = "573001234567";
 
 let cartItemsData = [];
 
@@ -242,7 +246,7 @@ whatsappBtn.addEventListener("click", () => {
         return;
     }
 
-    const phone = "573001234567";
+    const phone = WHATSAPP_PHONE;
 
     const products = cartItemsData.map(item => {
         return `• ${item.name} x${item.quantity} - ${formatPrice(
@@ -330,7 +334,7 @@ document.getElementById("contactForm").addEventListener("submit", event => {
     const subject = document.getElementById("contactSubject").value.trim();
     const message = document.getElementById("contactMessage").value.trim();
 
-    const phone = "573001234567";
+    const phone = WHATSAPP_PHONE;
 
     const whatsappMessage = `Hola, soy ${name}.
 
