@@ -3,18 +3,604 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gorras Vintage</title>
-</head>
+    <meta name="description" content="Gorras Vintage - Gorras con estilo retro y streetwear para todos los estilos.">
+    <title>Gorras Vintage | Estilo que representa</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
 <body>
 
-    <h1>Gorras Vintage</h1>
+    <div class="top-bar">
+        <span>Envíos a toda Colombia</span>
+        <span>Compra segura con Wompi</span>
+    </div>
 
-    <p>Estilo clásico, auténtico y urbano.</p>
+    <header class="header">
+        <a href="#inicio" class="logo">
+            <span>GV</span>
+            <div>
+                <strong>GORRAS</strong>
+                <small>VINTAGE</small>
+            </div>
+        </a>
 
-    <h2>Nuestra colección</h2>
+        <button class="menu-toggle" id="menuToggle">☰</button>
 
-    <p>Gorras vintage seleccionadas para ti.</p>
+        <nav class="nav" id="nav">
+            <a href="#inicio">Inicio</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#catalogo">Catálogo</a>
+            <a href="#galeria">Galería</a>
+            <a href="#testimonios">Testimonios</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
 
+        <div class="header-actions">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Buscar gorra...">
+                <span>⌕</span>
+            </div>
+
+            <button class="cart-button" id="cartButton">
+                🛒
+                <span id="cartCount">0</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero section" id="inicio">
+            <div class="hero-content reveal">
+                <p class="eyebrow">ESTILO • ACTITUD • PERSONALIDAD</p>
+                <h1>Tu estilo comienza<br><span>con una gorra.</span></h1>
+                <p class="hero-text">
+                    Descubre nuestra colección de gorras vintage y streetwear
+                    pensadas para quienes quieren destacar.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#catalogo" class="btn btn-dark">Ver catálogo</a>
+                    <a href="#nosotros" class="btn btn-light">Conócenos</a>
+                </div>
+            </div>
+
+            <div class="hero-visual reveal">
+                <div class="hero-circle"></div>
+                <div class="hero-cap">🧢</div>
+                <div class="hero-label">
+                    <strong>GV</strong>
+                    <span>VINTAGE STYLE</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section" id="nosotros">
+            <div class="section-heading reveal">
+                <p class="eyebrow">SOBRE NOSOTROS</p>
+                <h2>Más que una gorra,<br>una forma de expresarte.</h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p>
+                        En <strong>Gorras Vintage</strong> creemos que los accesorios
+                        son una parte importante de tu identidad. Seleccionamos
+                        diseños inspirados en la cultura vintage, retro y streetwear.
+                    </p>
+
+                    <p>
+                        Nuestro objetivo es ofrecer productos con personalidad,
+                        diferentes estilos y una experiencia de compra sencilla,
+                        rápida y segura.
+                    </p>
+
+                    <a href="#catalogo" class="text-link">Explorar colección →</a>
+                </div>
+
+                <div class="stats reveal">
+                    <div class="stat">
+                        <strong>100%</strong>
+                        <span>Estilo</span>
+                    </div>
+                    <div class="stat">
+                        <strong>6+</strong>
+                        <span>Diseños</span>
+                    </div>
+                    <div class="stat">
+                        <strong>24/7</strong>
+                        <span>Pedidos online</span>
+                    </div>
+                    <div class="stat">
+                        <strong>CO</strong>
+                        <span>Envíos nacionales</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalog section" id="catalogo">
+            <div class="section-heading reveal">
+                <p class="eyebrow">NUESTRA COLECCIÓN</p>
+                <h2>Encuentra tu estilo</h2>
+                <p>Explora nuestras gorras y elige la que más representa tu personalidad.</p>
+            </div>
+
+            <div class="catalog-toolbar reveal">
+                <div class="filters">
+                    <button class="filter active" data-category="todos">Todas</button>
+                    <button class="filter" data-category="clasicas">Clásicas</button>
+                    <button class="filter" data-category="urbanas">Urbanas</button>
+                    <button class="filter" data-category="deportivas">Deportivas</button>
+                </div>
+            </div>
+
+            <div class="products-grid" id="productsGrid">
+
+                <article class="product-card reveal" data-category="clasicas" data-name="Gorra Vintage Classic">
+                    <div class="product-image product-image-1">
+                        <span>VINTAGE</span>
+                        <div>🧢</div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">CLÁSICA</span>
+                        <h3>Gorra Vintage Classic</h3>
+                        <p>$45.000</p>
+                        <button class="add-cart"
+                            data-id="gorra-vintage-classic"
+                            data-name="Gorra Vintage Classic"
+                            data-price="45000">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </article>
+
+                <article class="product-card reveal" data-category="urbanas" data-name="Gorra Retro Street">
+                    <div class="product-image product-image-2">
+                        <span>STREET</span>
+                        <div>🧢</div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">URBANA</span>
+                        <h3>Gorra Retro Street</h3>
+                        <p>$50.000</p>
+                        <button class="add-cart"
+                            data-id="gorra-retro-street"
+                            data-name="Gorra Retro Street"
+                            data-price="50000">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </article>
+
+                <article class="product-card reveal" data-category="deportivas" data-name="Gorra Sport Vintage">
+                    <div class="product-image product-image-3">
+                        <span>SPORT</span>
+                        <div>🧢</div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">DEPORTIVA</span>
+                        <h3>Gorra Sport Vintage</h3>
+                        <p>$55.000</p>
+                        <button class="add-cart"
+                            data-id="gorra-sport-vintage"
+                            data-name="Gorra Sport Vintage"
+                            data-price="55000">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </article>
+
+                <article class="product-card reveal" data-category="clasicas" data-name="Gorra Heritage">
+                    <div class="product-image product-image-4">
+                        <span>HERITAGE</span>
+                        <div>🧢</div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">CLÁSICA</span>
+                        <h3>Gorra Heritage</h3>
+                        <p>$48.000</p>
+                        <button class="add-cart"
+                            data-id="gorra-heritage"
+                            data-name="Gorra Heritage"
+                            data-price="48000">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </article>
+
+                <article class="product-card reveal" data-category="urbanas" data-name="Gorra Urban Retro">
+                    <div class="product-image product-image-5">
+                        <span>URBAN</span>
+                        <div>🧢</div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">URBANA</span>
+                        <h3>Gorra Urban Retro</h3>
+                        <p>$52.000</p>
+                        <button class="add-cart"
+                            data-id="gorra-urban-retro"
+                            data-name="Gorra Urban Retro"
+                            data-price="52000">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </article>
+
+                <article class="product-card reveal" data-category="deportivas" data-name="Gorra Classic Sport">
+                    <div class="product-image product-image-6">
+                        <span>CLASSIC</span>
+                        <div>🧢</div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">DEPORTIVA</span>
+                        <h3>Gorra Classic Sport</h3>
+                        <p>$49.000</p>
+                        <button class="add-cart"
+                            data-id="gorra-classic-sport"
+                            data-name="Gorra Classic Sport"
+                            data-price="49000">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="gallery section" id="galeria">
+            <div class="section-heading reveal">
+                <p class="eyebrow">GALERÍA</p>
+                <h2>Inspiración Vintage</h2>
+                <p>Una mirada al estilo que representa nuestra marca.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item gallery-large reveal">
+                    <div>🧢</div>
+                    <span>RETRO COLLECTION</span>
+                </div>
+
+                <div class="gallery-item gallery-small reveal">
+                    <div>🧢</div>
+                    <span>STREET STYLE</span>
+                </div>
+
+                <div class="gallery-item gallery-small reveal">
+                    <div>🧢</div>
+                    <span>OLD SCHOOL</span>
+                </div>
+
+                <div class="gallery-item gallery-medium reveal">
+                    <div>🧢</div>
+                    <span>VINTAGE LOOK</span>
+                </div>
+
+                <div class="gallery-item gallery-medium reveal">
+                    <div>🧢</div>
+                    <span>URBAN CULTURE</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials section" id="testimonios">
+            <div class="section-heading reveal">
+                <p class="eyebrow">NUESTROS CLIENTES</p>
+                <h2>Ellos ya encontraron su estilo</h2>
+            </div>
+
+            <div class="testimonial-grid">
+
+                <article class="testimonial-card reveal">
+                    <div class="stars">★★★★★</div>
+                    <p>
+                        “Me encantó la gorra. El diseño está increíble y combina
+                        con prácticamente todo.”
+                    </p>
+                    <div class="client">
+                        <div class="client-avatar">A</div>
+                        <div>
+                            <strong>Andrea M.</strong>
+                            <span>Cliente verificada</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="testimonial-card reveal">
+                    <div class="stars">★★★★★</div>
+                    <p>
+                        “Muy buena atención y el pedido llegó rápido. Definitivamente
+                        volvería a comprar.”
+                    </p>
+                    <div class="client">
+                        <div class="client-avatar">J</div>
+                        <div>
+                            <strong>Juan D.</strong>
+                            <span>Cliente verificado</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="testimonial-card reveal">
+                    <div class="stars">★★★★★</div>
+                    <p>
+                        “Buscaba algo diferente y encontré justo el estilo que quería.
+                        La calidad me gustó mucho.”
+                    </p>
+                    <div class="client">
+                        <div class="client-avatar">S</div>
+                        <div>
+                            <strong>Santiago R.</strong>
+                            <span>Cliente verificado</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="benefits">
+                <div class="benefit reveal">
+                    <span>🚚</span>
+                    <div>
+                        <strong>Envíos nacionales</strong>
+                        <p>Recibe tu pedido donde estés.</p>
+                    </div>
+                </div>
+
+                <div class="benefit reveal">
+                    <span>💳</span>
+                    <div>
+                        <strong>Pago seguro</strong>
+                        <p>Compra mediante Wompi.</p>
+                    </div>
+                </div>
+
+                <div class="benefit reveal">
+                    <span>💬</span>
+                    <div>
+                        <strong>Atención directa</strong>
+                        <p>Estamos disponibles por WhatsApp.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq section" id="faq">
+            <div class="section-heading reveal">
+                <p class="eyebrow">PREGUNTAS FRECUENTES</p>
+                <h2>¿Tienes alguna pregunta?</h2>
+            </div>
+
+            <div class="faq-container">
+
+                <div class="faq-item reveal">
+                    <button class="faq-question">
+                        ¿Realizan envíos a todo Colombia?
+                        <span>+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Sí. Realizamos envíos a diferentes ciudades y municipios
+                            de Colombia. El tiempo y costo dependen del destino.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal">
+                    <button class="faq-question">
+                        ¿Cómo puedo realizar el pago?
+                        <span>+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Puedes realizar el pago de tu pedido de forma segura
+                            mediante Wompi desde nuestro carrito de compras.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal">
+                    <button class="faq-question">
+                        ¿Puedo hacer un pedido por WhatsApp?
+                        <span>+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Sí. También puedes enviarnos tu pedido directamente por
+                            WhatsApp para recibir asesoría.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal">
+                    <button class="faq-question">
+                        ¿Puedo solicitar otro diseño?
+                        <span>+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Escríbenos por WhatsApp y consulta la disponibilidad
+                            de otros diseños, colores o referencias.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal">
+                    <button class="faq-question">
+                        ¿Cómo puedo conocer el estado de mi pedido?
+                        <span>+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Una vez confirmado tu pedido puedes comunicarte con
+                            nosotros por WhatsApp para recibir información sobre
+                            el proceso de envío.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="contact section" id="contacto">
+            <div class="contact-grid">
+
+                <div class="contact-info reveal">
+                    <p class="eyebrow">CONTACTO</p>
+                    <h2>Hablemos de tu próximo estilo.</h2>
+                    <p>
+                        ¿Tienes alguna pregunta, quieres hacer un pedido o necesitas
+                        ayuda para elegir una gorra? Escríbenos.
+                    </p>
+
+                    <div class="contact-links">
+                        <a href="https://wa.me/573001234567" target="_blank">
+                            <span>◉</span>
+                            <div>
+                                <strong>WhatsApp</strong>
+                                <small>Atención directa</small>
+                            </div>
+                        </a>
+
+                        <a href="#" class="social-placeholder">
+                            <span>◎</span>
+                            <div>
+                                <strong>Instagram</strong>
+                                <small>@gorrasvintage</small>
+                            </div>
+                        </a>
+
+                        <a href="#" class="social-placeholder">
+                            <span>f</span>
+                            <div>
+                                <strong>Facebook</strong>
+                                <small>Gorras Vintage</small>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form reveal" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contactName">Nombre</label>
+                            <input type="text" id="contactName" required placeholder="Tu nombre">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactEmail">Correo</label>
+                            <input type="email" id="contactEmail" required placeholder="tu@email.com">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactSubject">Asunto</label>
+                        <input type="text" id="contactSubject" required placeholder="¿En qué podemos ayudarte?">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactMessage">Mensaje</label>
+                        <textarea id="contactMessage" rows="6" required placeholder="Escribe tu mensaje..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-dark full">
+                        Enviar por WhatsApp
+                    </button>
+
+                    <p class="form-note">
+                        Al enviar, serás dirigido a WhatsApp para continuar la conversación.
+                    </p>
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-brand">
+            <div class="logo footer-logo">
+                <span>GV</span>
+                <div>
+                    <strong>GORRAS</strong>
+                    <small>VINTAGE</small>
+                </div>
+            </div>
+            <p>Estilo que representa quién eres.</p>
+        </div>
+
+        <div class="footer-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#catalogo">Catálogo</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+
+        <div class="footer-copy">
+            <p>© 2026 Gorras Vintage. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <aside class="cart-panel" id="cart">
+        <div class="cart-header">
+            <div>
+                <span class="eyebrow">TU COMPRA</span>
+                <h2>Carrito</h2>
+            </div>
+            <button id="closeCart">×</button>
+        </div>
+
+        <div class="cart-items" id="cartItems">
+            <div class="empty-cart">
+                <span>🛒</span>
+                <p>Tu carrito está vacío.</p>
+                <a href="#catalogo" id="emptyCartLink">Ver catálogo</a>
+            </div>
+        </div>
+
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total</span>
+                <strong id="cartTotal">$0</strong>
+            </div>
+
+            <button class="btn btn-dark full" id="paymentBtn">
+                Pagar con Wompi
+            </button>
+
+            <button class="btn btn-whatsapp full" id="whatsappBtn">
+                Pedir por WhatsApp
+            </button>
+        </div>
+    </aside>
+
+    <div class="overlay" id="overlay"></div>
+
+    <div class="modal" id="paymentModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closePayment">×</button>
+
+            <div class="modal-heading">
+                <p class="eyebrow">PAGO SEGURO</p>
+                <h2>Finaliza tu compra</h2>
+                <p>Serás dirigido al proceso de pago de Wompi.</p>
+            </div>
+
+            <div id="paymentSummary"></div>
+
+            <div id="wompiContainer"></div>
+
+            <p class="secure-payment">
+                🔒 Tu información de pago es procesada de forma segura.
+            </p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
